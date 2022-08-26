@@ -1,0 +1,11 @@
+https://docs.brew.sh/Installation
+git clone https://github.com/Homebrew/brew homebrew
+eval "$(homebrew/bin/brew shellenv)"
+brew update --force --quiet
+chmod -R go-w "$(brew --prefix)/share/zsh"
+
+https://learn.hashicorp.com/tutorials/terraform/install-cli?in=terraform/aws-get-started
+
+curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"
+unzip awscli-bundle.zip
+sudo ./awscli-bundle/install -i /usr/local/aws -b /usr/local/bin/aws
